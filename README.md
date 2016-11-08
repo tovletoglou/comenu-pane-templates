@@ -253,7 +253,7 @@ Open bash from Windows -> SSH connection to remote server -> Execute commands ->
 
     set CHERE_INVOKING=1 & %ConEmuDir%\..\git-for-windows\bin\bash.exe -c "ssh -t username@server 'cd /home/user/directory && git fetch && /bin/bash -login'" -cur_console:n:t:"Tab 1"
 
-Multi-server login. This is a single task with name "Vagrant" that logins to 5 Vagrant VMs (part of the same testing environment).
+Multi-server login. This is a single task with name "Vagrant" that logins to 5 VMs (part of the same testing environment).
 
     set CHERE_INVOKING=1 & %ConEmuDir%\..\git-for-windows\bin\bash.exe -c "ssh -t vagrant@ansible.dev '/bin/bash -login'" -cur_console:n:t:Ansible
     set CHERE_INVOKING=1 & %ConEmuDir%\..\git-for-windows\bin\bash.exe -c "ssh -t vagrant@galera1.dev '/bin/bash -login'" -cur_console:s66H:n:t:Galera1
@@ -263,7 +263,7 @@ Multi-server login. This is a single task with name "Vagrant" that logins to 5 V
 
 ### Integrate bash with ConEmu on a portable manner
 
-In order to run the above examples I use [ConEmu](https://github.com/Maximus5/ConEmu) with `bash` form [git-for-windows](https://github.com/git-for-windows/git).
+In order to run the above examples I use [ConEmu](https://github.com/Maximus5/ConEmu) with `bash` from [git-for-windows](https://github.com/git-for-windows/git).
 
 1. Create a directory `software` in your CloudSyncService (Dropbox, Google Drive, OneDrive, etc) **without spaces** (some Linux tools that you will use later needs extra caution with spaces on paths, so we avoid them in the first place)
 2. Download and extract the portable version of [git-for-windows-latest](https://github.com/git-for-windows/git/releases/latest)
